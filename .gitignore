@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+node_modules/
+frontend/node_modules/
+__tests__/
+venv/
+content_intel_env/
+*.db
+

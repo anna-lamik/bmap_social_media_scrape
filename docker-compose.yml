@@ -1,0 +1,16 @@
+version: '3'
+services:
+  api:
+    build: ./backend
+    volumes:
+      - .:/app
+    command: uvicorn backend.main:app --reload --host 0.0.0.0
+    ports:
+      - "8000:8000"
+  web:
+    build: ./frontend
+    command: npm run dev -- --host
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "5173:5173"
