@@ -37,3 +37,12 @@ VITE_API_URL=http://localhost:8000
 ```
 
 Deploy on Render/Vercel by linking repo and using above commands.
+
+## Setup Script
+
+For convenience, you can create the environment and install all analysis
+dependencies using `setup_env.sh`:
+
+```bash
+bash setup_env.sh
+```
